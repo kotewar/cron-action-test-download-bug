@@ -1,7 +1,8 @@
 name: Test Cache download failure
 on:
   workflow_dispatch:
-
+  schedule:
+  - cron: "*/60 * * * *"
 jobs:
   java-example:
     runs-on: ubuntu-latest
@@ -27,7 +28,7 @@ jobs:
           - 11
           - 17
     steps:
-    - uses: actions/cache@v3
+    - uses: kotewar/cache@9daedbd0842de97cdce4c96d6132a6b4b59ac987
       id: cache
       with:
         path: /tmp/datacache
