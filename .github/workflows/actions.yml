@@ -28,7 +28,7 @@ jobs:
           - 11
           - 17
     steps:
-    - uses: actions/cache@539df98632884b8a2be5aec996498a546d1bef67
+    - uses: actions/cache@fcdd3e34ec35ef2e10a9165bedb6e543812c4944
       id: cache
       with:
         path: /tmp/datacache
