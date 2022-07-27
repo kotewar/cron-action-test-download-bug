@@ -28,7 +28,7 @@ jobs:
           - 11
           - 17
     steps:
-    - uses: kotewar/cache@517d59dc42359bf645315fc08ec344f924d2804d
+    - uses: kotewar/cache@a76bf59e970ccf9dda7987aced73a30029bda0aa
       id: cache
       with:
         path: /tmp/datacache
